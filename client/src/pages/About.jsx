@@ -1,7 +1,8 @@
-import React, { useState } from 'react';
+import React, { useState ,useContext } from 'react';
 import axios from 'axios';
-
+import { UserContext } from '../context/UserContext';
 const About = () => {
+    const {  setPassenger } = useContext(UserContext);
   const [formData, setFormData] = useState({
     userName: '',
     email: '',
@@ -10,6 +11,7 @@ const About = () => {
 
   const [message, setMessage] = useState('');
   const [error, setError] = useState('');
+ 
 
   const handleChange = (e) => {
     setFormData((prev) => ({
@@ -27,6 +29,10 @@ const About = () => {
       const res = await axios.post('http://localhost:8000/api/auth/signup', formData);
       setMessage(res.data.message);
       console.log(res.data);
+      setPassenger(res.data.user);
+localStorage.setItem('passenger', JSON.stringify(res.data.user));
+
+        console.log('passenger:', res.data.user); 
     } catch (err) {
       setError(err.response?.data?.error || 'Something went wrong');
     }

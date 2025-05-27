@@ -7,6 +7,8 @@ import Contact from "./pages/Contact";
 import MyBookings from "./pages/MyBooking";
 import ReviewBooking from "./pages/ReviewBooking";
 import {Practice}  from "./pages/Practice"
+import CreateUser from "./pages/CreateUser";
+import Dashboard from "./pages/Dashboard";
 
 const App = () => {
   return (
@@ -16,10 +18,14 @@ const App = () => {
       <div className="p-4">
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/dashboard" element={<Dashboard />} />
+
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/mybooking" element={<MyBookings />} />
           <Route path="/practice" element={<Practice />} />
+          <Route path="/create" element={<CreateUser />} />
+
 
           <Route path="/reviewbooking" element={<ReviewBooking />} />
 

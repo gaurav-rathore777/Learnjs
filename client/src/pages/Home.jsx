@@ -1,20 +1,25 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState  } from 'react';
 import axios from 'axios';
 
+import { UserContext } from '../context/UserContext';
 const Home = () => {
+  const { user, setUser } = React.useContext(UserContext);
   const [users, setUsers] = useState([]);
   const [error, setError] = useState('');
+
 
   useEffect(() => {
     const fetchUsers = async () => {
       try {
         const res = await axios.get('http://localhost:8000/api/auth/users');
         setUsers(res.data);
+        setUser(res.data); // Update context with fetched users
       } catch (err) {
         setError(err.response?.data?.error || 'Failed to load users');
       }
     };
 
+    // console.log('userData from context:', userData1);
     fetchUsers();
   }, []);
 

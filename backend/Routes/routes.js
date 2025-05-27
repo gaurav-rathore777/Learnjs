@@ -1,6 +1,7 @@
 import express from 'express';
 import { Signup, Login } from '../controllers/user.js'; // ✅ Correct path and import
 import User from '../models/user.js'; // ✅ Correct path and import
+import { createMen } from '../controllers/men.js';
 
 const router = express.Router();
 
@@ -14,6 +15,8 @@ router.get('/users', async (req, res) => {
     res.status(500).json({ error: err.message });
   }
 });
+
+router.post('/create' , createMen);
 
 router.post('/login', Login);
 
