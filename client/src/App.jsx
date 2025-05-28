@@ -9,6 +9,8 @@ import ReviewBooking from "./pages/ReviewBooking";
 import {Practice}  from "./pages/Practice"
 import CreateUser from "./pages/CreateUser";
 import Dashboard from "./pages/Dashboard";
+import FilterData from "./components/FilterData";
+import SearchFilter from "./pages/SearchFilter";
 
 const App = () => {
   return (
@@ -19,12 +21,16 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/filter" element={<FilterData />} />
+
 
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/mybooking" element={<MyBookings />} />
           <Route path="/practice" element={<Practice />} />
           <Route path="/create" element={<CreateUser />} />
+          <Route path="/search" element={<SearchFilter />} />
+
 
 
           <Route path="/reviewbooking" element={<ReviewBooking />} />
