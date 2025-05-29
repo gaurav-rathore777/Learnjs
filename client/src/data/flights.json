@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "from": "Delhi",
+    "to": "Mumbai",
+    "departure": "2025-05-30",
+    "return": "2025-06-01",
+    "fareType": "Doctor",
+    "price": 4500,
+    "class": "Economy"
+  },
+  {
+    "id": 2,
+    "from": "Delhi",
+    "to": "Mumbai",
+    "departure": "2025-05-30",
+    "return": "2025-06-01",
+    "fareType": "Student",
+    "price": 4200,
+    "class": "Economy"
+  },
+  {
+    "id": 3,
+    "from": "Delhi",
+    "to": "Goa",
+    "departure": "2025-05-30",
+    "return": "2025-06-01",
+    "fareType": "Regular",
+    "price": 5000,
+    "class": "Economy"
+  },
+  {
+  "id": 4,
+  "from": "Delhi",
+  "to": "Mumbai",
+  "departure": "2025-05-30",
+  "return": "2025-06-01",
+  "fareType": "Regular",
+  "price": 4000,
+  "class": "Economy"
+},
+  {
+    "id": 5,
+    "from": "Delhi",
+    "to": "Mumbai",
+    "departure": "2025-05-30",
+    "return": "2025-06-01",
+    "fareType": "Regular",
+    "price": 6000,
+    "class": "Business"
+  },
+  {
+    "id": 6,
+    "from": "Delhi",
+    "to": "Goa",
+    "departure": "2025-05-30",
+    "return": "2025-06-01",
+    "fareType": "Regular",
+    "price": 5500,
+    "class": "Economy"
+  },
+  {
+    "id": 7,
+    "from": "Delhi",
+    "to": "Goa",
+    "departure": "2025-05-30",
+    "return": "2025-06-01",
+    "fareType": "Regular",
+    "price": 7000,
+    "class": "Business "
+  },
+  {
+    "id": 8,
+    "from": "Delhi",
+    "to": "Mumbai",
+    "departure": "2025-05-30",
+    "return": "2025-06-01",
+    "fareType": "Regular",
+    "price": 4500,
+    "class": "Economy"
+  },
+  {
+    "id": 9,
+    "from": "Delhi",
+    "to": "Mumbai",
+    "departure": "2025-05-30",
+    "return": "2025-06-01",
+    "fareType": "Regular",
+    "price": 6500,
+    "class": "Business"
+  }
+]

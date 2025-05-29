@@ -11,6 +11,9 @@ import CreateUser from "./pages/CreateUser";
 import Dashboard from "./pages/Dashboard";
 import FilterData from "./components/FilterData";
 import SearchFilter from "./pages/SearchFilter";
+import ModalExample from "./pages/ModelExample";
+import FlightApp from "./pages/FlightApp";
+
 
 const App = () => {
   return (
@@ -22,6 +25,8 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/filter" element={<FilterData />} />
+          <Route path="/model" element={<ModalExample />} />
+
 
 
           <Route path="/about" element={<About />} />
@@ -30,6 +35,8 @@ const App = () => {
           <Route path="/practice" element={<Practice />} />
           <Route path="/create" element={<CreateUser />} />
           <Route path="/search" element={<SearchFilter />} />
+          <Route path="/fly" element={<FlightApp />} />
+
 
 
 
