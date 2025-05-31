@@ -13,6 +13,8 @@ import FilterData from "./components/FilterData";
 import SearchFilter from "./pages/SearchFilter";
 import ModalExample from "./pages/ModelExample";
 import FlightApp from "./pages/FlightApp";
+// import FlightFilters from "./pages/FlightAirline";
+import FlightSearchPage from "./pages/FlightAirline";
 
 
 const App = () => {
@@ -27,6 +29,7 @@ const App = () => {
           <Route path="/filter" element={<FilterData />} />
           <Route path="/model" element={<ModalExample />} />
 
+          <Route path="/flight" element={<FlightSearchPage />} />
 
 
           <Route path="/about" element={<About />} />
