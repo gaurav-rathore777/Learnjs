@@ -15,6 +15,8 @@ import ModalExample from "./pages/ModelExample";
 import FlightApp from "./pages/FlightApp";
 // import FlightFilters from "./pages/FlightAirline";
 import FlightSearchPage from "./pages/FlightAirline";
+import Signup from "./pages/Signup";
+import Framer from "./pages/Framer";
 
 
 const App = () => {
@@ -39,6 +41,10 @@ const App = () => {
           <Route path="/create" element={<CreateUser />} />
           <Route path="/search" element={<SearchFilter />} />
           <Route path="/fly" element={<FlightApp />} />
+          <Route path="/user" element={<Signup />} />
+          <Route path="/framer" element={<Framer />} />
+
+
 
 
 

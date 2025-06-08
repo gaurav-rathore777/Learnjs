@@ -14,6 +14,7 @@ const ReviewBooking = () => {
     if (data.length === 0) {
       alert('No passengers found. Please book tickets first.');
       return;
+      
     }
 
     setPassengers(data);
@@ -35,7 +36,7 @@ const ReviewBooking = () => {
     const content = passengers
       .map(
         (p, i) =>
-          `Passenger ${i + 1}\nName: ${p.userName}\nAge: ${p.age}\nSeat: ${p.seat}\n--------------------`
+          `Passenger ${i + 1}\nName: ${p.name}\nAge: ${p.age}\nSeat: ${p.seat}\n--------------------`
       )
       .join('\n');
 
